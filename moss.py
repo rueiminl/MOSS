@@ -40,6 +40,7 @@ def main():
             andrewids.append(andrewid)
         i += 1
         temp = 'temp' + '%02d' % i
+        call(['rm', '-rf', andrewid])
         call(['mkdir', andrewid])
         call(['mkdir', temp])
         call(['unzip', assignment, '-d', temp])
